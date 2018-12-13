@@ -12,7 +12,7 @@
         android:layout_height="108dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="392dp"
+        android:layout_marginTop="416dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:text="CLICK ME"
@@ -63,23 +63,4 @@
         app:layout_constraintVertical_bias="0.12"
         tools:src="@drawable/meme" />
 
-    <TextView
-        android:id="@+id/urlText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginBottom="350dp"
-        android:text="URL"
-        android:textSize="20sp"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/myTxt"
-        app:layout_constraintVertical_bias="0.445" />
 </android.support.constraint.ConstraintLayout>

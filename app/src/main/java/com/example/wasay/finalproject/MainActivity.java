@@ -23,6 +23,7 @@ import com.android.volley.Response;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.squareup.picasso.Picasso;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -46,7 +47,6 @@ public class MainActivity extends Activity {
         txt = findViewById(R.id.myTxt);
         btn = findViewById(R.id.myButton);
         img = findViewById(R.id.myImage);
-        urlTxt = findViewById(R.id.urlText);
 
         requestQueue = Volley.newRequestQueue(this);
         getMemeList();
@@ -56,8 +56,7 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
                 int index = (int) (Math.random() * urlArray.length);
                 txt.setText(nameArray[index]);
-                urlTxt.setText(urlArray[index]);
-                img.setImageResource(R.drawable.meme2);
+                Picasso.with(getBaseContext()).load(urlArray[index]).resize(550,550).centerCrop().into(img);
 
 
 
